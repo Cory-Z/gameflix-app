@@ -6,4 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class GameflixApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GameflixApplication.class, arg
+        SpringApplication.run(GameflixApplication.class, args);
+    }
+}

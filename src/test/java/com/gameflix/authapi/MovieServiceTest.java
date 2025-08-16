@@ -31,4 +31,13 @@ public class MovieServiceTest {
         System.out.println("Running getAllMovies_ShouldContainExpectedMovie...");
         List<Movie> movies = movieService.getAllMovies();
         boolean containsExpected = movies.stream()
-                .anyMatch(movie -> movie.getTitle().equalsIgnoreCase("Incept
+                .anyMatch(movie -> movie.getTitle().equalsIgnoreCase("Inception"));
+        Assertions.assertTrue(containsExpected, "Movies list should contain 'Inception'");
+    }
+
+    @Test
+    void dummyTest() {
+        System.out.println("Dummy test ran.");
+        Assertions.assertTrue(true);
+    }
+}
